@@ -1,0 +1,80 @@
+<head>
+    <title>OujiaBot documentation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <img src="https://cdn.discordapp.com/avatars/726893055906414855/87f9b6e153a3f1560109247af699c70a.png?size=256" width="256" height="256" alt="OujiaBot profile picture">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@AonanComhad">
+    <meta name="twitter:title" content="OujiaBot documention" />
+    <meta name="twitter:description" content="Documention for the discord OujiaBot" />
+    <meta name="twitter:image" content="https://comhad.github.io/img/OujiaBot.png" />
+    <meta name="keywords" content="discord, discord bots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>OujiaBot</h1>
+    <p>OujiaBot is a discord bot based on the <b>r/AskOujia</b> of reddit.</p>
+    <p>When you issue the <code>/ask</code> command, it will give you a statement with a blank to fill in, which will look something like this: </p><br/>
+    <code style="font-size: 20px">The next meme will be ____.</code><br>
+    <p>After this, you and some friends can fill in the blank by saying one letter at a time each! Like this : </p>
+    <table style="font-size: 20px; width: 10%;">
+        <tr>
+            <th>Person 1</th>
+            <th>T</th>
+        </tr>
+        <tr>
+            <th>Person 2</th>
+            <th>H</th>
+        </tr>
+        <tr>
+            <th>Person 3</th>
+            <th>I</th>
+        <tr>
+        <tr>
+            <th>Person 4</th>
+            <th>S</th>
+        <tr>
+    </table>
+    
+    <p>After this, just say goodbye and the bot will include it into a sentence!</p>
+    <code style="font-size: 20px">The next meme will be THIS.</code><br>
+    <p>A note that the bot does not care which case you type in when using this. For example. <br/> <br/>
+    Typing <code>this</code> will become <code>THIS</code>.<br/>
+    Typing <code>THIS</code> will still be <code>THIS</code>.<br/> 
+    Typing <code>ThIs</code> will become <code>THIS</code>.</p>
+
+    <p>Also the bot does not care what case <code>Goodbye</code> is written in, as long as the message only contains the string <code>goodbye</code> and nothing else.</p><br/>
+
+    <h2><code>/ask</code></h2>
+    <p>You use <code>/ask</code> to issue a statement for you, this statement will be locked to that particular channel of that server until someone says <code>goodbye</code>.
+    See above for what to do with the statement when you have it.</p><br/>
+
+    <h2><code>/insult</code></h2>
+    <p><b>Be aware that this is not moderated by me, and it may output something potentially triggering.</b></p>
+    <p>The bot can generate insults! 
+    By issuing <code>/insult</code> you can get an insult from the bot that calls <a href="https://insult.mattbas.org/api/">this API</a> and returns a tumblr inspired insult!</p><br>
+
+    <h2><code>/inspire</code></h2>
+    <p><b>Be aware that this is not moderated by me, and it may output something potentially triggering.</b></p>
+    <p>The bot can (try to) give inspirational quotes via the <code>/inspire</code> command!
+    By using <a href="https://inspirobot.me/">inspirobot.me</a>, the bot can return an inspirational quote!
+    The documentation for the API the bot uses is <a href="https://github.com/kishlaya/inspirobot-bot/blob/master/README.md">here</a>.</p>
+
+    <h2><code>/mode</code></h2>
+    <p>The last two functions (<code>/insult</code> and <code>/inspire</code>) can be disabled or enabled by typing this command in the server. 
+    This can only be done by someone with manage server permissions.</p>
+
+    <h2><code>/help</code></h2>
+    <p>More or less a summary of all the information above.</p>
+
+    <p><a href="/oujiabot/privacy.html">OujiaBot privacy policy</a></p>
+
+    <h2>Bot invite widget</h2>
+    <p>top.gg</p>
+    <a href="https://top.gg/bot/726893055906414855">
+    <img src="https://top.gg/api/widget/726893055906414855.svg" alt="OujiaBot" />
+    </a>
+    <p>discordbotlist.com</p>
+    <script src="https://discordbotlist.com/widget/index.js" async></script>
+    <dbl-widget bot-id="bot-oujiabot"></dbl-widget>
+    <noscript><p>Looks like you have JavaScript disabled, you can either enable it to see the widget or just go to the main page over <a href="https://discord.ly/oujiabot">here</a></noscript>
+</body>

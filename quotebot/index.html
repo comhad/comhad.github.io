@@ -1,0 +1,75 @@
+<head>
+    <title>QuoteBot documentation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="twitter:card" content="summary" /> 
+    <meta name="twitter:creator" content="@AonanComhad">
+    <meta name="twitter:title" content="QuoteBot documentation" />
+    <meta name="twitter:description" content="Documention for the undertale discord QuoteBot" />
+    <meta name="description" content="Documention for the undertale discord QuoteBot" />
+    <meta name="twitter:image" content="https://comhad.githib.io/img/QuoteBot.png" />
+    <meta name="keywords" content="undertale, DELTARUNE, discord, discord bots, comhad, quotebot, textbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1 class="centertext">QuoteBot</h1>
+    <p class="centertext">QuoteBot is a bot which can quote other users and then put their message contents into an undertale style text box!</p>
+    <p class="centertext">QuoteBot has two main modes of operation, custom profile pictures and sprites.</p>
+    <p class="centertext">By issuing just <code>quote</code> (you can either prefix it with a <code>/</code> or ping the bot) and then a ping or username
+        to follow it, it will generate a text box including the users avatar.</p>
+    <p class="centertext">Or you can choose to include a character and expression (optional!) like <code>quote @user#1234 &lt;character&gt; &lt;expression&gt; &lt;color&gt;*</code></p>
+    <center>
+        <table style="font-size: 20px; width: 40%;">
+        <tr>
+            <th>Person 1</th>
+            <th>I hope that robot is bug free now</th>
+        </tr>
+        <tr>
+            <th>Person 2</th>
+            <th>/quote <bdi style="font-size: 20px; color: blue; background-color: #6eb6f5;">@Person 1</bdi> alphys sweat</th>
+        </tr>
+        <tr>
+            <th>QuoteBot</th>
+            <th><img src="https://www.demirramon.com/gen/undertale_text_box.png?message=character%3Dalphys%20I%20hope%20that%20robot%20is%20bug%20free%20now%20expression%3Dsweat"/ width="300"></th>
+        <tr>
+    </table>
+    </center>
+    <p class="centertext">The bot can also use custom colors*, if you put <code>color=&lt;choice&gt;</code>, you can get custom colors for each part of text, like this!**</p>
+    <center>
+    <img src="/img/custom_colors.jpg"/ width="550" height="400">
+    </center>
+    <p class="centertext">This API is made and hosted by <a href="https://twitter.com/Demirramon">Demirramon</a> on their <a href="https://www.demirramon.com/">site</a>.
+    The documentation for the API is <a href="https://www.demirramon.com/en/help/undertale_text_box_generator_dev">here</a>, this also includes all the characters and expressions possible for use.</p>
+
+    <h2 class="centertext"><code>quote</code></h2>
+    <p class="centertext">This takes up to three arguments, only the first one is required. These are a user ping (you can also copy a users id or use just their username in the new version!),
+    a character to display as the sprite (optional) and an expression for that character (optional, not required if you pick a character).</p>
+    <p class="centertext">All the characters and expressions possible are listed in the documentation above. 
+    The expression you choose <b>must</b> match with the character you choose, else you will encounter an error where the bot simply sends back a png that doesn't display.
+    This error can also happen because you used a character name that wasn't valid, you can use character aliases aswell.</p> 
+
+    <h2 class="centertext"><code>help</code></h2>
+    <p class="centertext">More or less a summary of all the info above, and a link to the API docs that includes all the characters and expressions.</p>
+    
+    <h2 class="centertext"><code>upvote</code></h2>
+    <p class="centertext">Upvoting the bot on <a href="https://discordbotlist.com/">discordbotlist.com</a> will allow you to use colors in textboxes. This command shows users how to do that.</p> 
+    <p class="centertext">*Custom colors are only obtainable by upvoting the bot, neither of the methods can be used without first upvoting this particular bot on this <a href="https://discord.ly/quotebot-6334">link</a>.</p>
+    <p class="centertext">**If you are trying to get colors working and are getting a forbidden character error when putting one at the end of the <code>quote</code> command, don't put <code>color=</code>.</p>
+    <p class="centertext">For example, if you wanted red, just put <code>red</code> as the last argument instead of <code>color=red</code>.</p>
+
+    <h2 class="centertext">Privacy</h2>
+    <p class="centertext">The bot only keeps an pseudonymised server id and the arguments passed with the quote command for analytics, this can <b>not</b> be used to identify your server, for more info on how that is pseudonymised see <a href="/oujiabot/privacy.html">here</a>.</p>
+        <h3 class="centertext">Bot invite widget</h3>
+        <p class="centertext">top.gg</p>
+        <center>
+        <a href="https://top.gg/bot/767482935648845864">
+            <img src="https://top.gg/api/widget/767482935648845864.svg" alt="QuoteBot" />
+        </a>
+        </center>
+        <p class="centertext">discordbotlist.com</p>
+        <script src="https://discordbotlist.com/widget/index.js" async></script>
+        <center>
+        <dbl-widget bot-id="bot-quotebot-6334"></dbl-widget>
+        </center>
+        <noscript><p>Looks like you have JavaScript disabled, you can either enable it to see the widget or just go to the main page over <a href="https://discord.ly/quotebot-6334">here</a></noscript>
+        <p class="centertext"><a href="https://discord.bots.gg/bots/767482935648845864">discord.bots.gg link</a></p>
+</body>

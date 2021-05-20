@@ -1,0 +1,53 @@
+<head>
+    <title>OujiaBot privacy</title>
+    <link rel="stylesheet" href="/styles.css">
+    <img src="https://cdn.discordapp.com/avatars/726893055906414855/87f9b6e153a3f1560109247af699c70a.png?size=256" width="256" height="256" alt="OujiaBot profile picture" style="float:right;">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@AonanComhad">
+    <meta name="twitter:title" content="OujiaBot privacy policy" />
+    <meta name="twitter:description" content="Privacy policy for the discord OujiaBot" />
+    <meta name="twitter:image" content="https://comhad.github.io/img/OujiaBot.png" />
+    <meta name="keywords" content="priacy, discord, discord bots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>("I" refers to me, comhad. and me alone. The bot refers to OujiaBot, a bot I made, am maintaining and hosting. Any questions please reach me at my <a href="https://twitter.com/AonanComhad">twitter</a>)</p>
+    <h1>How OujiaBot uses data that it's given.</h1>
+    <p>All the data that goes into OujiaBot is pseudonymised and securely stored in an sqlite3 database on a firewalled VPS server that only I have access too.</p>
+    
+    <h2>How is data pseudonymised?</h2>
+    <p>Via the use of <a href="https://www.educative.io/edpresso/what-is-hashing">hashing</a>, any data that would be considered personally identifiable is hashed first via MD5.</p>
+    <p>For example, when you ask for a statement using <code>/ask</code>, OujiaBot has to hold the channel and server where this statement is being given.</p>
+    <p>Each channel and server host a unique ID, this ID is an 18 didget number unique to that server / channel.</p>
+    <p>These IDs are hashed and then stored in a database along with the question. The hashes look like a 32-character string of random characters containing only <a href="https://en.wikipedia.org/wiki/Hexadecimal">hexadecimal</a> characters.</p>
+    <p><b>It is impossible to reverse these hashes, I won't know what channel or server it's sent from.</b></p>
+    <p>The server keeps track of this since sending a message from the same channel of the same server and channel will produce the same hashes, thus the bot will know what question / answer you have</p><br>
+
+    <h2>What data is collected when and why?</h2>
+    <h3>Pseudonymised server id</h3>
+    <p>This is collected when you use the <code>/ask</code>, <code>/insult</code>, <code>/mute</code> and <code>/inspire</code> commands. <br>
+    I won't know the server this is from, the <code>/mute</code> uses it so the bot knows if to allow the <code>/insult</code> and <code>/inspire</code> commands in your server. 
+    The other commands keep a log of it purely for analytics</p><br>
+
+    <h3>Pseudonymised channel id</h3>
+    <p>This is only collected when you use <code>/ask</code>. <br>
+    As stated above this is required for the <code>/ask</code> command to function.</p> 
+
+    <h2>Other misc data : </h2>
+    <h3>Time something happened</h3>
+    <p>This is collected when you use <code>/ask</code>, <code>/inspire</code> and <code>/insult</code> commands.<br>
+    This is analytics, it allows me to query the database for "How many questions have been asked this month?" etc.</p>
+
+    <h3>If a question is active</h3>
+    <p>This is collected when you use the <code>/ask</code> command and finsh a question.<br>
+    If you ask OujiaBot for a question when you already have one active, OujiaBot will state you must finish that one before getting another in that channel.
+    OujiaBot keeps track of this via the database where it stores questions.</p>
+
+    <h3>Question and answers</h3>
+    <p>This is collected when you use the <code>/ask</code> command and finish a question.<br>
+    The bot needs to keep track of the questions it gives and answers it gets.</p>
+
+    <h1>Other things to know</h1>
+    <p>All data used is designed to explicitly comply with <a href="https://discord.com/developers/docs/legal#a-implement-good-privacy-practices">Discord's guidelines</a>.
+    No data is sold or sent to any other organisations or people.</p>
+</body>
